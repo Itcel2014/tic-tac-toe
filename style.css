@@ -1,0 +1,42 @@
+* {
+  font-family: Chalkduster;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: pink;
+  font-size: 5vw;
+  border: 1vw solid white;
+  margin: 5vw;
+  border-radius: 50%;
+}
+body {
+  background-color: rgb(217, 229, 240);
+}
+div {
+  border: 0.5rem solid white;
+  background-color: rgb(247, 218, 223);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1vw;
+  font-size: 10vw;
+}
+.cell {
+  border: none;
+  width: 30vw;
+  height: 30vw;
+}
+.grid > .cell:nth-child(3n + 2) {
+  border-right: 1vw solid white;
+  border-left: 1vw solid white;
+}
+.grid > .cell:nth-child(n + 4):nth-child(-n + 6) {
+  border-top: 1vw solid white;
+  border-bottom: 1vw solid white;
+}
