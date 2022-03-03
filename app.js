@@ -5,27 +5,44 @@ let gameState = {
     [null, null, null],
     [null, null, null],
   ],
+  count: 0,
   turn: "X",
 };
-// let name =
-// function myFunction() {
-//   var x = document.getElementById("myText").name;
-//   document.getElementById("demo").innerHTML = x;
-// }
-//draw grid 3x3
-//
+
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = x;
+}
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo1").innerHTML = x;
+}
+
 gameState.board;
 let currentPlayer = "X";
 const grid = document.querySelector(".grid");
 grid.addEventListener("click", function (event) {
-  console.log(event.target.id);
+  console.log(event);
 
-  event.target.innerText = currentPlayer;
-  if (currentPlayer === "X") {
-    currentPlayer = "o";
-  } else if (currentPlayer === "o") {
-    currentPlayer = "X";
+  if (gameState.count % 2 === 0 && event.target.innerHTML === "") {
+    event.target.innerHTML = "X";
+    gameState.count++;
+  } else if (event.target.innerHTML === "") {
+    event.target.innerHTML = "o";
+    gameState.count++;
   }
+  // if (
+  //   (currentPlayer === "X" && event.target.className === "cell") ||
+  //   event.target.inner.html === ""
+  // ) {
+  //   event.target.innerText = currentPlayer;
+  //   currentPlayer = "o";
+  // } else if (
+  //   (currentPlayer === "o" && event.target.className === "cell") ||
+  //   event.target.inner.html === ""
+  // ) {
+  //   currentPlayer = "X";
+  // }
 });
 
 // keep track of whose turn it is
