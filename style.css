@@ -5,29 +5,55 @@
   padding: 0;
 }
 
+header {
+  color: white;
+  border-bottom: 1vw inset whitesmoke;
+  border-left: 0.7vw inset whitesmoke;
+  border-right: 0.7vw inset whitesmoke;
+  margin-bottom: 5vw;
+  margin-top: 1vw;
+  padding-top: 2vw;
+  /* border-radius: 5%; */
+  font-style: italic;
+  box-shadow: 10px 10px 30px rgb(228, 225, 225);
+  background-color: #dfcfe7;
+}
 h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  /* background-color: #f2b5d4; */
   font-size: 5vw;
-  /* border: 1vw solid white; */
-  /* margin: 5vw; */
-  /* border-radius: 50%; */
-  font-style: italic;
+}
+h4 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: cursive;
+  font-size: 1.5vw;
+  margin-right: 2vw;
+}
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 input {
-  width: 150px;
+  width: 130px;
+  height: 30px;
+  margin: 1vw;
 }
 button {
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 90px;
+  height: 20px;
+  background-color: rgb(255, 255, 176);
+  color: black;
+  margin: 1vw;
 }
 body {
   background-image: url("colorful.jpg");
+  background-repeat: repeat-x;
+  background-size: 270vw;
   max-width: 100%;
   max-height: 100%;
   display: flex;
@@ -41,23 +67,18 @@ body {
   justify-content: center;
 }
 .grid {
-  /* border: 0.5rem solid white; */
-  background-color: #7bdff2;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: auto auto auto;
   font-size: 10vw;
-  width: 600px;
-  height: 600px;
   justify-content: center;
+  padding: 1.5rem;
 }
 
 .cell {
   border: none;
-  width: 190px;
-  height: 190px;
-  /* border: 0.5rem solid white; */
-  /* background-color: #f2b5d4; */
+  width: 160px;
+  height: 160px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -71,4 +92,9 @@ body {
 .grid > .cell:nth-child(n + 4):nth-child(-n + 6) {
   border-top: 0.8vw solid #eff7f6;
   border-bottom: 0.8vw solid #eff7f6;
+}
+.reset {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
