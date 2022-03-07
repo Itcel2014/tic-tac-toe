@@ -32,12 +32,7 @@ h4 {
   font-size: 1.5vw;
   margin-right: 2vw;
 }
-footer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-}
+
 input {
   width: 130px;
   height: 30px;
@@ -53,7 +48,7 @@ button {
 body {
   background-image: url("colorful.jpg");
   background-repeat: repeat-x;
-  background-size: 270vw;
+  background-size: 279vw;
   max-width: 100%;
   max-height: 100%;
   display: flex;
@@ -61,6 +56,13 @@ body {
   flex-direction: column;
   margin: auto;
   text-align: center;
+}
+.display {
+  color: pink;
+  background-color: white;
+  width: 300px;
+  margin-left: 1vw;
+  margin-top: -3vw;
 }
 .centerMe {
   display: flex;
@@ -77,8 +79,8 @@ body {
 
 .cell {
   border: none;
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -93,8 +95,18 @@ body {
   border-top: 0.8vw solid #eff7f6;
   border-bottom: 0.8vw solid #eff7f6;
 }
-.reset {
+/* .displayWinner {
+  background-color: white;
+} */
+footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  margin-top: 5vw;
+  background-color: #dfcfe7;
+  height: 10vw;
+  border-top: 1vw outset whitesmoke;
+  border-left: 0.7vw outset whitesmoke;
+  border-right: 0.7vw outset whitesmoke;
+  border-bottom: 0.7vw outset whitesmoke;
 }
